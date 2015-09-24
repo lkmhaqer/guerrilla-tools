@@ -1,9 +1,9 @@
 <?php
 
-$dbuser		= "gtools";
-$dbpass		= "af67a3300209eae4441b7086";
-$dbname		= "gtools";
-$dbhost		= "localhost";
+$dbuser		= "username";
+$dbpass		= "password";
+$dbname		= "database";
+$dbhost		= "hostname";
 
 
 try {
