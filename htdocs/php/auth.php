@@ -17,7 +17,7 @@ include('google2factor.php');
 
 
 
-// Checking if the user should be here. We Authenticate ever page below.
+// Checking if the user should be here. We Authenticate every page below.
 
 if (!$_SESSION['authenticated'] && !($_POST['username'] && $_POST['password']) && !$_SESSION['second-stage'])
 	buildLoginPage('');

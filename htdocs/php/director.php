@@ -198,6 +198,24 @@ switch ($_GET['a']) {
 
 		break;
 
+        case 'delete_aut-num':
+
+                $currentPage = "aut-num";
+
+                try {
+
+                        $query = $dbh->prepare("DELETE FROM aut-num WHERE id = :id LIMIT 1");
+                        $query->execute(array("id" => $_GET['id']));
+                        $alertText = buildAlert("aut-num Deleted!", "success");
+
+                } catch (PDOException $e) {
+
+                        $alertText = buildAlert("<ul>$e</ul>", "danger");
+
+                }
+
+                break;
+
 }
 
 ?>
