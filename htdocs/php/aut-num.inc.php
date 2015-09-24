@@ -1,7 +1,7 @@
           <h1 class="page-header">aut-num</h1>
           <div class="row add-router-form">
 <?php echo($alertText); ?>
-            <form class="form-inline" action="/?a=add_aut-num" method="POST">
+            <form class="form-inline" action="/?a=add_aut_num" method="POST">
               <div class="form-group">
                 <label class="sr-only" for="asn">ASN</label>
                 <input type="text" class="form-control" id="asn" name="asn" placeholder="ASN">

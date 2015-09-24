@@ -156,7 +156,7 @@ switch ($_GET['a']) {
 		$currentPage = "aut-num";
 		break;
 
-	case 'add_aut-num':
+	case 'add_aut_num':
 
 		$currentPage = "aut-num";
 		$errorText;
@@ -198,13 +198,13 @@ switch ($_GET['a']) {
 
 		break;
 
-        case 'delete_aut-num':
+        case 'delete_aut_num':
 
                 $currentPage = "aut-num";
 
                 try {
 
-                        $query = $dbh->prepare("DELETE FROM aut-num WHERE id = :id LIMIT 1");
+                        $query = $dbh->prepare("DELETE FROM aut_num WHERE id = :id LIMIT 1");
                         $query->execute(array("id" => $_GET['id']));
                         $alertText = buildAlert("aut-num Deleted!", "success");
 
